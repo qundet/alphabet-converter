@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Alphabet convertor</title>
+</head>
+<body>
+    <div class="app-wrapper">
+        <header class="header">
+            <a href="https://github.com/Qundet">Qundet</a>
+        </header>
+        <div class="convertor">
+            <div class="switch-wrapper">
+                <p id="from">Cirillic</p>
+                <button onclick="switchAlphabet()">switch</button>
+                <p id="to">Latin</p>
+            </div>
+            <div class="input-wrapper">
+                <textarea name="input" id="" cols="30" rows="10" class="input"></textarea>
+            </div>
+            <div class="output-wrapper">
+                <textarea name="output" id="" cols="30" rows="10" class="input"></textarea>
+            </div>
+        </div>
+    </div>
+  <script src="scripts/alphabet.json"></script>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
