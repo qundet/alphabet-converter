@@ -1,21 +1,29 @@
 .app-wrapper{
-    background: #bebebe;
+    background: #c7c7c7;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
 .header{
-    background: #ff5c5c;
+    background: #747474;
+}
+
+a{
+    color: #373737;
 }
 
 .convertor{
+    background: #373737;
+    max-width: 1400px;
     height: 90%;
     display: grid;
     grid-template: "s s" 1fr
                    "i o" 10fr; 
     gap: 0 20px;
-    margin: 20px 40px;
+    margin: 20px auto;
+    box-shadow: -1px 1px 5px #7e7e7e;
+    border-radius: 10px;
 }
 
 .switch-wrapper{
@@ -23,14 +31,42 @@
     background: #373737;
     border-radius: 10px 10px 0 0;
     color: aliceblue;
+    display: grid;
+    grid-template-columns: 10fr 1fr 10fr;
+    text-align: center;
+    font-size: 26px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.switch-button {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.switch-button:active {
+    transform: scale(0.8);
+    transition: 200ms;
+}
+
+.switch-icon {
+    width: 40px;
+    
 }
 
 .input-wrapper,.output-wrapper{
     background: #e4e4e4;
-    border-radius: 0 0 10px 10px;
-    padding: 10px 20px;
+    padding: 30px 30px;
+}
+
+.output-wrapper {
+    border-radius: 0 0 10px 0;
+}
+
+.input-wrapper {
+    border-radius: 0 0 0 10px;
 }
 
 .input,.output{
@@ -46,16 +82,22 @@
 /* for mobile devices */
 @media (max-width: 770px) {
     .convertor {
-        height: 92%;
+        height: 100%;
         display: grid;
         grid-template:  "s" 1fr
                         "i" 10fr
                         "o" 10fr;
-        margin: 20px 10px;
+        margin: 0px;
+    }
+    
+    .switch-wrapper{
+        border-radius: 0;
     }
 
-    .input-wrapper {
+    .input-wrapper,
+    .output-wrapper {
         border-radius: 0;
         border-bottom: 1px #373737 solid;
+        padding: 20px 20px;
     }
 }

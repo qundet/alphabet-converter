@@ -15,14 +15,16 @@
         <div class="convertor">
             <div class="switch-wrapper">
                 <p id="from">Cirillic</p>
-                <button onclick="switchAlphabet()">switch</button>
+                <div onclick="switchAlphabet()" class="switch-button">
+                    <img class="switch-icon" src="assets/switch-icon.png" alt="switch">
+                </div>
                 <p id="to">Latin</p>
             </div>
             <div class="input-wrapper">
                 <textarea oninput="onInput()" id="input" cols="30" rows="10" class="input"></textarea>
             </div>
             <div class="output-wrapper">
-                <textarea id="output" cols="30" rows="10" class="input"></textarea>
+                <textarea readonly id="output" cols="30" rows="10" class="input"></textarea>
             </div>
         </div>
     </div>
