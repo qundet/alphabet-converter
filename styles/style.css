@@ -1,41 +1,48 @@
 .app-wrapper{
-    background: #c7c7c7;
+    background: #e7e7e7;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
-.header{
-    background: #747474;
+footer{
+    background: #c0c0c0;
 }
 
 a{
-    color: #373737;
+    color: #007F73;
+    text-decoration: none;
 }
 
 .convertor{
-    background: #373737;
-    max-width: 1400px;
+    background: #007F73;
+    max-width: 1200px;
     height: 90%;
     display: grid;
     grid-template: "s s" 1fr
                    "i o" 10fr; 
-    gap: 0 20px;
-    margin: 20px auto;
+    gap: 0 5px;
+    margin: 30px auto;
     box-shadow: -1px 1px 5px #7e7e7e;
     border-radius: 10px;
 }
 
 .switch-wrapper{
     grid-area: s;
-    background: #373737;
+    background: #007F73;
     border-radius: 10px 10px 0 0;
     color: aliceblue;
     display: grid;
     grid-template-columns: 10fr 1fr 10fr;
     text-align: center;
+    align-items: center;
     font-size: 26px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#from,#to{
+    padding: 0;
+    margin: 0;
 }
 
 .switch-button {
@@ -52,13 +59,16 @@ a{
 }
 
 .switch-icon {
-    width: 40px;
-    
+    width: 30px;
 }
 
 .input-wrapper,.output-wrapper{
     background: #e4e4e4;
     padding: 30px 30px;
+}
+
+::placeholder {
+    color: #0f4d46;
 }
 
 .output-wrapper {

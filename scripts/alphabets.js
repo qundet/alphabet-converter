@@ -1,4 +1,4 @@
-const cyrillicAlph = [
+const cyrillic = [
   "КIу",
   "кІу",
   "К1у",
@@ -105,7 +105,7 @@ const cyrillicAlph = [
   "ю",
 ];
 
-const latinAlph = [
+const latin = [
   "Q",
   "q",
   "Q",

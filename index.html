@@ -9,9 +9,6 @@
 </head>
 <body>
     <div class="app-wrapper">
-        <header class="header">
-            <a href="https://github.com/Qundet">Qundet</a>
-        </header>
         <div class="convertor">
             <div class="switch-wrapper">
                 <p id="from">Cirillic</p>
@@ -21,14 +18,17 @@
                 <p id="to">Latin</p>
             </div>
             <div class="input-wrapper">
-                <textarea oninput="onInput()" id="input" cols="30" rows="10" class="input"></textarea>
+                <textarea placeholder="Адыгэбзэ" oninput="onInput()" id="input" cols="30" rows="10" class="input"></textarea>
             </div>
             <div class="output-wrapper">
-                <textarea readonly id="output" cols="30" rows="10" class="input"></textarea>
+                <textarea placeholder="Ádıgebze" readonly id="output" cols="30" rows="10" class="input"></textarea>
             </div>
         </div>
+        <!-- <footer>
+            <a href="https://github.com/Qundet">qundet</a>
+        </footer> -->
     </div>
-  <script src="scripts/alphabets.js"></script>
+    <script src="scripts/alphabets.js"></script>
   <script src="scripts/index.js"></script>
 </body>
 </html>

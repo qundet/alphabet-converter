@@ -1,10 +1,25 @@
+let fromArr = cyrillic;
+let toArr = latin;
+
 function switchAlphabet() {
+  // header
   const from = document.getElementById("from");
   const to = document.getElementById("to");
   let tmp = from.innerHTML;
   from.innerHTML = to.innerHTML;
   to.innerHTML = tmp;
-  console.log(alph);
+
+  // placeholder
+  const inputPH = document.getElementById("input");
+  const outputPH = document.getElementById("output");
+  tmp = inputPH.placeholder;
+  inputPH.placeholder = outputPH.placeholder;
+  outputPH.placeholder = tmp;
+
+  // arrays
+  tmp = fromArr;
+  fromArr = toArr;
+  toArr = tmp;
 }
 
 function onInput() {
@@ -15,12 +30,12 @@ function onInput() {
   }, 1000);
 }
 
-function cyrillicToLatin(str) {
-  for (let i = 0; i < cyrillicAlph.length; i++) {
-    const regex = new RegExp(`${cyrillicAlph[i]}`, "g");
-    str = str.replace(regex, latinAlph[i]);
-    console.log(str);
+function cyrillicToLatin(input) {
+  for (let i = 0; i < fromArr.length; i++) {
+    const regex = new RegExp(`${fromArr[i]}`, "g");
+    input = input.replace(regex, toArr[i]);
+    console.log(input);
   }
-  console.log(str);
-  return str;
+  console.log(input);
+  return input;
 }
