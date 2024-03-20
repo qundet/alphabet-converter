@@ -9,7 +9,7 @@ function switchAlphabet() {
   from.innerHTML = to.innerHTML;
   to.innerHTML = tmp;
 
-  // placeholder
+  // placeholders
   const inputPH = document.getElementById("input");
   const outputPH = document.getElementById("output");
   tmp = inputPH.placeholder;
