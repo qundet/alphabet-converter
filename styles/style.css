@@ -1,33 +1,37 @@
-.app-wrapper{
+.app-wrapper {
     background: #e7e7e7;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
-footer{
-    background: #c0c0c0;
+footer {
+    background: #dadada;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
 }
 
-a{
+a {
     color: #007F73;
     text-decoration: none;
 }
 
-.convertor{
+.convertor {
     background: #007F73;
     max-width: 1200px;
     height: 90%;
     display: grid;
     grid-template: "s s" 1fr
-                   "i o" 10fr; 
+        "i o" 10fr;
     gap: 0 5px;
     margin: 30px auto;
     box-shadow: -1px 1px 5px #7e7e7e;
     border-radius: 10px;
 }
 
-.switch-wrapper{
+.switch-wrapper {
     grid-area: s;
     background: #007F73;
     border-radius: 10px 10px 0 0;
@@ -40,7 +44,8 @@ a{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#from,#to{
+#from,
+#to {
     padding: 0;
     margin: 0;
 }
@@ -62,7 +67,8 @@ a{
     width: 30px;
 }
 
-.input-wrapper,.output-wrapper{
+.input-wrapper,
+.output-wrapper {
     background: #e4e4e4;
     padding: 30px 30px;
 }
@@ -79,14 +85,19 @@ a{
     border-radius: 0 0 0 10px;
 }
 
-.input,.output{
+.input,
+.output {
     width: 100%;
     height: 100%;
     outline: none;
     border: none;
-    background:  transparent;
+    background: transparent;
     resize: none;
     font-size: 26px;
+}
+
+::placeholder {
+    color: #0033244b;
 }
 
 /* for mobile devices */
@@ -94,13 +105,13 @@ a{
     .convertor {
         height: 100%;
         display: grid;
-        grid-template:  "s" 1fr
-                        "i" 10fr
-                        "o" 10fr;
+        grid-template: "s" 1fr
+            "i" 10fr
+            "o" 10fr;
         margin: 0px;
     }
-    
-    .switch-wrapper{
+
+    .switch-wrapper {
         border-radius: 0;
     }
 
